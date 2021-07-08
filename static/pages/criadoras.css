@@ -1,0 +1,13 @@
+.capa_perfil img{
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    /* border: 1px solid white; */
+}
+
+.redes_sociais{
+    padding-left: 160px;
+}
+
+
+

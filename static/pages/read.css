@@ -1,0 +1,61 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* body {
+    margin: auto;
+    background-color: rgb(82, 1, 1);
+    height: 100%;
+    width: 100%;
+    border: solid 1px coral;
+} */
+
+.header{
+    background-color: rgb(3, 0, 0);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    /* border: solid 1px coral; */
+}
+.bloco {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* border: solid 1px coral; */
+}
+.btnvoltar, .botaoheader{
+    background-color: rgb(82, 1, 1);
+    border: solid, 1px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 5px;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Impact, fantasy;
+    border: none;
+}
+.btnvoltar:hover, .botaoheader:hover{
+    background-color: black;
+}
+
+h2{
+    color:white;
+    font-family: Impact, fantasy;
+    text-align: center;
+    font-size: larger;
+}
+h4{
+    color: white;
+}
+.titulo{
+    padding-top: 3%;
+}
+
+.tituloread{
+    padding-top: 3%;
+}
+

@@ -1,0 +1,60 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+background-color: #000;
+}
+
+.box{
+justify-content: space-around;
+display: flex;
+padding: 2%;
+/* border: solid 1px white; */
+text-align: center;
+}
+
+.box-direita, .box-esquerda {
+width: 50%;
+color: white;
+font-family: Impact, fantasy;
+/* border: solid 1px white; */
+}
+
+.box-imagem{
+padding: 0%;
+/* border: solid 1px white; */
+}
+
+.capa{
+width: 100%;
+height: 100%;
+border-radius: 5%;
+}
+
+.redes_sociais{
+    display: flex;
+    /* border: solid 1px white; */
+    /* background-color:blue; */
+}
+
+.texto{
+color: white;
+padding: -10px;
+padding-left: 50px;
+padding-right: 50px;
+text-align: left;
+
+}
+
+#text{
+    
+    color: white;
+    text-align: justify;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+

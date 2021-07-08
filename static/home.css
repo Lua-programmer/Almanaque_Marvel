@@ -1,0 +1,68 @@
+/* ESSE CSS É APENAS PARA A HOME, NÃO ALTERAR */
+*{
+    margin-top: 0%;
+    padding: 0;
+    
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url(../static/teste.gif);
+    background-size: cover;
+    font-family: impact, fantasy;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 20px 5px;
+}
+
+a:hover {
+    background-color: rgb(82, 1, 1);
+    color: white;
+}
+
+
+ul{
+    list-style: none;
+    top: 70px;
+    position: absolute;
+    width: 100%;
+
+}
+
+img{
+    width: 40px;
+    border: solid 3px black;
+}
+
+input[type="checkbox"]{
+    display: none;
+
+}
+
+nav{
+    background-color: rgba(226, 173, 173, 0.3);
+    width: 350px;
+    height: 100vh;
+    left: -350px;
+    position: absolute;
+    transition: all .5s;
+}
+
+input[type="checkbox"]:checked ~ nav{
+    transform: translate(350px);
+}
+
+label{
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+a{
+    font-size:larger;
+}

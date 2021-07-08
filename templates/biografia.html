@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almanaque Marvel</title>
+    <link rel="stylesheet" href="../static/pages/read.css">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/pages/biografia.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="bloco">
+            <a href="/" class="botaoheader">Home</a>
+            <a href="/read" class="botaoheader" >Voltar</a>
+            <a href="/update/{{personagem.id}}" class="botaoheader">Atualizar</a>
+            <a href="/delete/{{personagem.id}}" class="botaoheader">Deletar</a>
+        </div>
+    </header>
+
+
+        <div class="box">
+            <div class="box-esquerda">
+                <h1>{{personagem.nome_}}</h1>
+                <br>
+
+                <div class="box-imagem">
+                    <img class="capa" src="{{personagem.imagem_url_}}" alt="{{personagem.nome_}}">
+                </div>
+            </div>
+
+            <div class="box-direita">
+                <h1>Biografia</h1>
+                <br>
+                <div class="texto">
+                        <h2 id="text" > 
+                            {{personagem.biografia_}}
+                        </h2>
+                </div>
+            </div>
+
+
+        </div>
+
+</body>
+</html>

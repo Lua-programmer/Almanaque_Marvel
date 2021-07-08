@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almanaque Marvel</title>
+    <link rel="stylesheet" href="../static/pages/read.css">
+    <link rel="stylesheet" href="../static/pages/carrossel.css">
+</head>
+<body>
+    <header class="header">
+        <div class="bloco">
+            <a href="/" class="btnvoltar">Voltar</a>
+        </div>
+    </header>
+    
+    <div class="gallery">
+        <div class="gallery__prev"></div>
+        <div class="gallery__next"></div>
+        <div class="gallery__stream">
+            {% for personagem in listaDePersonagens %}
+            
+            <img onclick="redirecionar('{{personagem.id}}')" class="gallery__item" src="{{personagem.imagem_url_}}" alt="{{personagem.nome_}}">
+            
+            {% endfor %}
+        </div>
+      </div>
+
+    <div class="tituloread">
+        <h2>Clique na imagem para conhecer o personagem!</h2>
+    </div>
+
+<script src="../static/index.js"></script>
+</body>
+</html>

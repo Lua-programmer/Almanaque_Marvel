@@ -1,0 +1,16 @@
+.removido_sucesso {
+background-color: rgb(64, 233, 64);
+border-color: green;
+color: white;
+margin: 0 50px;
+border-radius: 4px;
+}
+
+.highlight {
+background: rgb(82, 1, 1);
+border-radius: 5px;
+color: #ffffff;
+font-size: 22px;
+font-weight: bold;
+padding: 5px 20px;
+}

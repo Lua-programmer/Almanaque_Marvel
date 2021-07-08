@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almanaque Marvel</title>
+    <link rel="stylesheet" href="/static/pages/read.css">
+    <link rel="stylesheet" href="/static/pages/create.css">
+    <link rel="stylesheet" href="/static/pages/delete.css">
+</head>
+<body>
+       
+    <header class="header">
+        <div class="bloco">
+            <a href="/read" class="btnvoltar">Voltar</a>
+        </div>
+    </header>
+
+    {% if sucesso %}
+        <div class="bloco">
+            <div class="removido_sucesso">
+                <p>Registro removido com sucesso</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="bloco">
+            <a href="/read" class="btnvoltar">Visualizar todos os personagens</a>
+        </div>
+    {% elif personagem %}
+
+        <div class="bloco">
+            <h2>Remover registro</h2>
+        </div>
+        <br>
+
+        <div class="bloco">
+            <p>Tem certeza que deseja remover o registro <span class="highlight">{{personagem.nome_}}</span>?</p>
+        </div>
+
+        <br>
+
+        <div class="bloco">
+            <a href="/delete/{{personagem.id}}/confirmed" class="btnvoltar">Remover</a>
+            <a href="/read" class="btnvoltar">Cancelar</a>
+        </div>
+
+    {% else %}
+
+        <div class="bloco">
+            <h2>Remover registro</h2>
+        </div>
+
+        <div class="bloco">
+            <p>Nenhum personagem foi encontrado.</p>
+        </div>
+
+        <div class="bloco">
+            <a href="/read" class="botaoheader">Voltar para a lista de filmes</a>
+        </div>
+        {% endif %}
+
+</body>
+</html>

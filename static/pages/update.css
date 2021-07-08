@@ -1,0 +1,17 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+background-color: #000;
+}
+
+.update_sucesso {
+background-color: rgb(64, 233, 64);
+border-color: green;
+color: white;
+margin: 0 50px;
+border-radius: 4px;
+}

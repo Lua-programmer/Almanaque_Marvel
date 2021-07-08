@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almanaque Marvel</title>
+    <link rel="stylesheet" href="../static/pages/create.css">
+    <link rel="stylesheet" href="../static/pages/read.css">
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="bloco">
+            <a href="/" class="btnvoltar">Voltar</a>
+        </div>
+    </header>
+
+    <div class="titulo">
+        <h2>Inserir Personagem</h2>
+    </div>
+
+    {% if id_atribuido %}
+
+    <div class="bloco">
+        <div class="boxformsecond">
+            <br>
+            <br>
+            <p>Personagem inserido com sucesso!</br>
+                <br>
+            O ID atribuido foi <span class="id_atribuido">{{ id_atribuido}}</span>.<br>
+            <br>
+            <a href="/read/{{id_atribuido}}" class ="btnvoltar">Visualizar personagem</a>
+            </p>
+        </div>
+    </div>
+
+    {% else %}
+
+    <div class="bloco">
+        
+        <div class="boxform">
+            <form class="form" method="POST" >
+
+
+                <div class="form_input">
+                    <label for="nome_">Nome: </label>
+                    <input placeholder="Homem de Ferro" type="text" id="nome" name="nome_" request>
+                </div>
+
+                <div class="form_input">
+                    <label for="imagem_url_">URL da Imagem: </label>
+                    <input placeholder="https://images.alphacoders.com/994/thumb-1920-994711.jpg" type="text" id="imagem_url" name="imagem_url_" required>
+                </div>
+
+                <div class="form_input">
+                    <h4 for="biografia_">Biografia: </h4> 
+                    <textarea placeholder="Homem de Ferro é um personagem de quadrinhos, criado por Stan Lee e Larry Lieber." type="text" id="biografia" name="biografia_" required></textarea>
+                </div>
+                
+                
+                <div class="container">
+                    <div class="bloco">
+                        <input type="submit" class="btnvoltar" value="Enviar">
+                    </div>
+                </div>
+              
+            </form>
+        </div>
+    </div>
+
+    {% endif %}
+
+</body>
+</html>
